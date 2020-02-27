@@ -15,6 +15,9 @@
 		78285ABC2400FB3A003212AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78285ABA2400FB3A003212AE /* LaunchScreen.storyboard */; };
 		78285AC72400FB3C003212AE /* KamLaxTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78285AC62400FB3C003212AE /* KamLaxTaskTests.swift */; };
 		78285AD22400FB3C003212AE /* KamLaxTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78285AD12400FB3C003212AE /* KamLaxTaskUITests.swift */; };
+		78826D4C240112F900D6C918 /* ViewControllerRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78826D4A240112F900D6C918 /* ViewControllerRoot.swift */; };
+		78826D4D240112F900D6C918 /* ViewControllerRoot.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78826D4B240112F900D6C918 /* ViewControllerRoot.xib */; };
+		78826D4F2401186A00D6C918 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78826D4E2401186900D6C918 /* RootViewModel.swift */; };
 		78DA6975240100B500260CAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA6962240100B500260CAF /* Constants.swift */; };
 		78DA6976240100B500260CAF /* ContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA6965240100B500260CAF /* ContactService.swift */; };
 		78DA6977240100B500260CAF /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA6967240100B500260CAF /* NetworkConstants.swift */; };
@@ -62,6 +65,9 @@
 		78285ACD2400FB3C003212AE /* KamLaxTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KamLaxTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78285AD12400FB3C003212AE /* KamLaxTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamLaxTaskUITests.swift; sourceTree = "<group>"; };
 		78285AD32400FB3C003212AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78826D4A240112F900D6C918 /* ViewControllerRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRoot.swift; sourceTree = "<group>"; };
+		78826D4B240112F900D6C918 /* ViewControllerRoot.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerRoot.xib; sourceTree = "<group>"; };
+		78826D4E2401186900D6C918 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		78DA6962240100B500260CAF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		78DA6965240100B500260CAF /* ContactService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactService.swift; sourceTree = "<group>"; };
 		78DA6967240100B500260CAF /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
@@ -180,6 +186,8 @@
 		78DA69592400FE5800260CAF /* RootController */ = {
 			isa = PBXGroup;
 			children = (
+				78826D4A240112F900D6C918 /* ViewControllerRoot.swift */,
+				78826D4B240112F900D6C918 /* ViewControllerRoot.xib */,
 			);
 			path = RootController;
 			sourceTree = "<group>";
@@ -211,6 +219,7 @@
 		78DA695D2400FF0300260CAF /* RootViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				78826D4E2401186900D6C918 /* RootViewModel.swift */,
 			);
 			path = RootViewModel;
 			sourceTree = "<group>";
@@ -409,6 +418,7 @@
 			files = (
 				78285ABC2400FB3A003212AE /* LaunchScreen.storyboard in Resources */,
 				78285AB92400FB3A003212AE /* Assets.xcassets in Resources */,
+				78826D4D240112F900D6C918 /* ViewControllerRoot.xib in Resources */,
 				78285AB72400FB0C003212AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78826D4C240112F900D6C918 /* ViewControllerRoot.swift in Sources */,
 				78DA697B240100B500260CAF /* HttpClient.swift in Sources */,
 				78DA6977240100B500260CAF /* NetworkConstants.swift in Sources */,
 				78285AB42400FB0C003212AE /* ViewController.swift in Sources */,
@@ -449,6 +460,7 @@
 				78DA6981240100B500260CAF /* URLSessionProtocol.swift in Sources */,
 				78DA6979240100B500260CAF /* URLSessionDataTaskExtension.swift in Sources */,
 				78DA697F240100B500260CAF /* RequestProtocol.swift in Sources */,
+				78826D4F2401186A00D6C918 /* RootViewModel.swift in Sources */,
 				78DA6980240100B500260CAF /* URLSessionDataTaskProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,7 +566,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -608,7 +620,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
